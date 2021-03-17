@@ -11,11 +11,11 @@ const starterEncouragements = [
   "You are a great person / bot!"
 ]
 
-db.get("encouragements").then(encouragements => {
-  if (!encouragements || encouragements.length < 1) {
-    db.set("encouragements", starterEncouragements)
-  }
-})
+// db.get("encouragements").then(encouragements => {
+//   if (!encouragements || encouragements.length < 1) {
+//     db.set("encouragements", starterEncouragements)
+//   }
+// })
 
 // db.get("responding").then(value => {
 //   if (value == null) {
