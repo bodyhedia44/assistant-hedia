@@ -1,7 +1,5 @@
 const Discord = require("discord.js")
 const fetch = require("node-fetch")
-const keepAlive = require("./server")
-const Database = require("@replit/database")
 
 const db = new Database()
 const client = new Discord.Client()
@@ -105,5 +103,4 @@ client.on("message", msg => {
 
 })
 
-keepAlive()
 client.login(process.env.TOKEN)
