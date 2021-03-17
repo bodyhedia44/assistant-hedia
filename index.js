@@ -60,14 +60,14 @@ client.on("message", msg => {
     getQuote().then(quote => msg.channel.send(quote))
   }
 
-  db.get("responding").then(responding =>{
-    if (responding && sadWords.some(word => msg.content.includes(word))) {
-      db.get("encouragements").then(encouragements => {
-        const encouragement = encouragements[Math.floor(Math.random() * encouragements.length)]
-        msg.reply(encouragement)
-      })
-    }
-  })
+//   db.get("responding").then(responding =>{
+//     if (responding && sadWords.some(word => msg.content.includes(word))) {
+//       db.get("encouragements").then(encouragements => {
+//         const encouragement = encouragements[Math.floor(Math.random() * encouragements.length)]
+//         msg.reply(encouragement)
+//       })
+//     }
+//   })
 
 
 //   if (msg.content.startsWith("$new")) {
